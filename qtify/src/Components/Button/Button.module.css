@@ -1,0 +1,13 @@
+.Button{
+    background-color: #121212;
+    color:#34C94B;
+    border-radius: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+  font-weight: bold;
+
+
+}
+.div{
+    padding-right: 50px;
+}
