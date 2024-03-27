@@ -3,7 +3,9 @@ import React from "react";
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from "@mui/material/TextField";
 import styles from "./Search.module.css"
-function Search(){
+import { Search } from "@mui/icons-material";
+import { Button } from "@mui/material";
+function Searchh(props){
 
 
 
@@ -13,9 +15,12 @@ function Search(){
    <TextField id="outlined-basic"  variant="outlined" className={styles.search}
    InputProps={{
     startAdornment: <InputAdornment position="start"></InputAdornment>,
+    
   }}
-  placeholder="Search a album of your choice"
+  placeholder={props.Placeholder}
+
    />
+{/* <Button>Search</Button> */}
   
 
       </>
@@ -24,4 +29,4 @@ function Search(){
         
     )
 }
-export default Search 
+export default Searchh

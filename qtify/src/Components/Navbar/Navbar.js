@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../Logo/Logo"
 import Button from "../Button/Button"
-import Search  from "../Search/Search"
+import Searchh  from "../Search/Searchh"
 import {Link} from "react-router-dom"
 import styles from "./Navbar.module.css"
 function Navbar(){
@@ -14,7 +14,9 @@ return(
         <Link to="/">
      <Logo/>
      </Link>
-     <Search/>   
+     <Searchh 
+     flag={true}
+     Placeholder="Search a album of your choice"/>   
     <Button/>
     </nav>
     </>
