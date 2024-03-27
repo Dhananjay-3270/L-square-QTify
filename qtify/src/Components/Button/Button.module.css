@@ -5,14 +5,15 @@
     background-color: #121212;
     color:#34C94B;
     border-radius: 12px;
-    padding: 10px 16px;
+    width: 170px;
+    height: 47px ;
     cursor: pointer;
+    margin-right: 50px;
+ 
+    
 
-    *{font-family:Poppins ;font-weight:600}
+    font-family:Poppins ;font-weight:600
 
 }
 
-.div{
-    padding-right: 50px;
-    *{font-family:Poppins;font-weight:600}
-}
+
