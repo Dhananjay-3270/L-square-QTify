@@ -4,10 +4,14 @@
     border-radius: 12px;
     padding: 10px 16px;
     cursor: pointer;
-  font-weight: bold;
+ 
 
 
 }
+/* .Button.text{
+  font-family: Poppins;
+} */
 .div{
     padding-right: 50px;
+    font-family: 'Poppins';
 }
