@@ -18,6 +18,7 @@ return(
      flag={true}
      Placeholder="Search a album of your choice"/>   
     <Button/>
+    
     </nav>
     </>
 )
