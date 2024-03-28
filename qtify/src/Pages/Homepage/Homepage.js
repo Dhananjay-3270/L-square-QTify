@@ -11,11 +11,14 @@ function Homepage() {
 <Box  display="flex"
       flexDirection="column"
       justifyContent="space-between"
-      minHeight="100vh">
+      minHeight="100vh"
+      className={styles.box}>
 <Box className={styles.hero}>
 
 
 </Box>
+<p className={styles.heading}>100 Thousand Songs, ad-free Over thousands podcast episodes</p>
+
 </Box>
     </div>
   );
