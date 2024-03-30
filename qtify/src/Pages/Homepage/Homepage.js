@@ -12,6 +12,7 @@ console.log( "TOp",topAlbums)
     <div>
       <Hero/>
   <Section  tittle="Top Albums" data = {topAlbums} type="album"  />
+  <Section  tittle="New Albums" data = {newAlbums} type="album"  />
     </div>
   );
 }
