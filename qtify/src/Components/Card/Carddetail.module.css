@@ -1,0 +1,39 @@
+.div{
+  width: 159px;
+  height: 260px;
+}
+.card {
+  width: 159px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px,10px,10px,10px;
+}
+.image {
+  width: 100px;
+  height: 170px;
+}
+
+
+
+
+.title{
+  width: 130px;
+
+  color: white;
+  font-style: normal;
+  font-size: 14px;
+  position: relative;
+}
+
+
+.chip{
+width: 71px;
+height: 23px;
+border-radius: 10px;
+}
+
+.typo{
+  color: white;
+}

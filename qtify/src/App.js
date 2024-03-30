@@ -20,13 +20,12 @@ function App() {
     generatedata("topAlbums", fetchtopalbums);
     generatedata("newAlbums", fetchnewalbums);
   }, []);
-  console.log("statelevel", data);
   const { topAlbums = [], newAlbums = [] } = data;
-
+const array = [1,2,3,4,5,6,7,8,9]
   return (
     <>
    
-    <Navbar/>
+    <Navbar data ={array}/>
       
 <Outlet context={{data:{topAlbums,newAlbums}}}/>
    

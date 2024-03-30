@@ -1,6 +1,27 @@
 .card {
-    height: 50%;
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.tittletext{
+    color: #FFFFFF;
+    
+font-size: 20px;
+
+
+}
+.toggletext{
+    color: #34C94B;
+    font-size: 20px;
+
+
+
 }

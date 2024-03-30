@@ -1,33 +1,62 @@
-import headphone from "../Hero/headphone.png";
+import React from "react";
 import styles from "./Section.module.css";
-import { useOutletContext } from "react-router-dom";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Rating,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, CircularProgress, Grid } from "@mui/material";
+import { useState } from "react";
+import { Search, SentimentDissatisfied } from "@mui/icons-material";
+import Carddetails from "../Card/Carddetail";
+function Section(data) {
+  const [filters, setFilters] = useState([{ key: "all", Label: "All" }]);
+  const [carouselToggle, setCarouseltoggle] = useState(true);
 
-function Section() {
-  const { data } = useOutletContext();
-  const { newAlbums, topAlbums } = data;
-  console.log("Helloo", topAlbums, newAlbums);
-
+  const handleToggle = () => {
+    setCarouseltoggle((prevState) => !prevState);
+  };
+  console.log("Homepage", data);
   return (
     <>
-      <Grid container>
-        {/* <Card  className={styles.card}>
-<CardMedia img="https://media.istockphoto.com/id/543336084/photo/silhouette-telecommunication-towers-with-tv-antennas-satellite-dish-in-sunset.jpg?s=1024x1024&w=is&k=20&c=UG8UhY50LicN6sIFVhWHvqp1yxh98G_MtAZYK69xhSE=" />
-<CardContent>
-
-
-</CardContent>
-</Card> */}
-      </Grid>
+      <div>
+        <div className={styles.header}>
+          <h1 className={styles.tittletext}>{data.tittle}</h1>
+          <h4 className={styles.toggletext} onClick={handleToggle}>
+            Show All
+          </h4>
+        </div>
+        {data.data.length === 0 ? (
+          <CircularProgress />
+        ) : (
+          <div>
+            {
+              <Grid container>
+                <Grid
+                container
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  className={styles.maingrid}
+                  spacing={1}
+                >
+                  {data.data.length ? (
+                    data.data.map((ele) => (
+                      <Grid item key={ele.id} md={1.7}>
+                        <Carddetails carddata={ele} type={data.type} />
+                      </Grid>
+                    ))
+                  ) : (
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      justifyContent="center"
+                      alignItems="center"
+                    >
+                      <SentimentDissatisfied size={40} />
+                    </Box>
+                  )}
+                </Grid>
+              </Grid>
+            }
+          </div>
+        )}
+      </div>
     </>
   );
 }
