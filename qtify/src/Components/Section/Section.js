@@ -18,15 +18,16 @@ function Section(data) {
         <div className={styles.header}>
           <h1 className={styles.tittletext}>{data.tittle}</h1>
           <h4 className={styles.toggletext} onClick={handleToggle}>
-           {carouselToggle? ("Show All"):("Collapse All")}
+           {carouselToggle? ("Collapse All"):("Show All")}
           </h4>
         </div>
         {data.data.length === 0 ? (
           <CircularProgress />
         ) : (
           <div>
-            {
-              <Grid container>
+            
+            { carouselToggle ? 
+              (<Grid container>
                 <Grid
                 container
                   direction="row"
@@ -52,8 +53,9 @@ function Section(data) {
                     </Box>
                   )}
                 </Grid>
-              </Grid>
-            }
+              </Grid>): (<div>Hello</div>) 
+
+}
           </div>
         )}
       </div>
