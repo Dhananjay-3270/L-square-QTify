@@ -1,27 +1,30 @@
 .div{
   width: 159px;
-  height: 260px;
+  height: 232px;
 }
 .card {
   width: 159px;
-  height: 250px;
-  display: flex;
+  height: 205px;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
   border-radius: 10px,10px,10px,10px;
+  color: #FFFFFF;
 }
 .image {
   width: 100px;
   height: 170px;
+  border-radius: 10px, 10px, 0px, 0px;
 }
 
 
 
 
 .title{
-  width: 130px;
-
-  color: white;
+  color: #FFFFFF;
+  width: 159px;
+height: 27px;
+background-color: #121212;
   font-style: normal;
   font-size: 14px;
   position: relative;
@@ -32,8 +35,24 @@
 width: 71px;
 height: 23px;
 border-radius: 10px;
+background-color: #121212;
+color: #FFFFFF;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: 10px;
+position: relative;
+top :5px ;
+left:6px
+
 }
 
 .typo{
   color: white;
+}
+.content{
+
+  height: 57px;
+
 }

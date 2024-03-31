@@ -22,10 +22,11 @@ console.log(data.carddata.image)
 return (
     
   <>
-<div className={styles.div}>
+{/* <div className={styles.div}>
     <Card className={styles.card}>
     <CardMedia
         className={styles.image}
+        height = "170"
         component="img"
         alt="product"
         image={data.carddata.image}
@@ -47,6 +48,25 @@ return (
  
 
 
+</div> */}
+<div className={styles.div}>
+  <Card className={styles.card}>
+  <CardMedia
+        className={styles.image}
+        height = "170"
+        component="img"
+        alt="product"
+        image={data.carddata.image}
+        
+      />
+
+  <div className={styles.chip} > {data.carddata.follows}</div>
+
+
+
+
+  </Card>
+  <div className={styles.title}> {data.carddata.title}</div>
 </div>
     </>
 )

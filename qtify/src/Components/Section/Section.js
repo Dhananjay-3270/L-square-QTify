@@ -18,7 +18,7 @@ function Section(data) {
         <div className={styles.header}>
           <h1 className={styles.tittletext}>{data.tittle}</h1>
           <h4 className={styles.toggletext} onClick={handleToggle}>
-            Show All
+           {carouselToggle? ("Show All"):("Collapse All")}
           </h4>
         </div>
         {data.data.length === 0 ? (
@@ -33,7 +33,7 @@ function Section(data) {
                   justifyContent="center"
                   alignItems="center"
                   className={styles.maingrid}
-                  spacing={1}
+                  spacing={5}
                 >
                   {data.data.length ? (
                     data.data.map((ele) => (
