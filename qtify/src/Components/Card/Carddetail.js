@@ -10,7 +10,8 @@ import {
     Rating,
     Grid,
     Typography,
-    Chip
+    Chip,
+    Tooltip
   } from "@mui/material";
   import { CardOverflow } from '@mui/joy';
 
@@ -50,6 +51,7 @@ return (
 
 </div> */}
 <div className={styles.div}>
+  <Tooltip title={`${data.carddata.songs.length} Songs`} placement="top" arrow>
   <Card className={styles.card}>
   <CardMedia
         className={styles.image}
@@ -60,14 +62,16 @@ return (
         
       />
 
-  <div className={styles.chip} > {data.carddata.follows}</div>
+  <div className={styles.chip} > {`${data.carddata.follows} Follows`}</div>
 
 
 
 
   </Card>
   <div className={styles.title}> {data.carddata.title}</div>
+  </Tooltip>
 </div>
+
     </>
 )
 
