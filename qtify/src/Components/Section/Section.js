@@ -7,12 +7,12 @@ import Carddetails from "../Card/Carddetail";
 import Carousel from "../Carousel/Carousel";
 function Section(data) {
   const [filters, setFilters] = useState([{ key: "all", Label: "All" }]);
-  const [carouselToggle, setCarouseltoggle] = useState(true);
+  const [carouselToggle, setCarouseltoggle] = useState(false);
 
   const handleToggle = () => {
     setCarouseltoggle((prevState) => !prevState);
   };
-  console.log("Homepage", data);
+ 
   return (
     <>
       <div>
