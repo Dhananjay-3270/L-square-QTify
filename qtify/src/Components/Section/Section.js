@@ -19,7 +19,7 @@ function Section(data) {
         <div className={styles.header}>
           <h1 className={styles.tittletext}>{data.tittle}</h1>
           <h4 className={styles.toggletext} onClick={handleToggle}>
-           {carouselToggle? ("Collapse All"):("Show All")}
+           {carouselToggle? "Collapse All":"Show All"}
           </h4>
         </div>
         {data.data.length === 0 ? (
@@ -54,9 +54,9 @@ function Section(data) {
                     </Box>
                   )}
                 </Grid>
-              </Grid>): (<Carousel carouseldata={data.data}
+              </Grid>): <Grid container>(<Carousel carouseldata={data.data}
               
-              />) 
+              />)</Grid> 
 
 }
           </div>

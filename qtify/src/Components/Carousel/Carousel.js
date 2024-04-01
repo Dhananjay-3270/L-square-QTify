@@ -41,7 +41,7 @@ function Carousel(data) {
           spaceBetween={40}
         >
           <Controldata controldata={data.carouseldata} />
-          <Leftarrow/>
+          <Leftarrow />
 <Rightarrow/>
           {swiperitems(data.carouseldata)}
         </Swiper>
