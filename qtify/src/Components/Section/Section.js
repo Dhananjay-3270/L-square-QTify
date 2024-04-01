@@ -4,6 +4,7 @@ import { Box, CircularProgress, Grid } from "@mui/material";
 import { useState } from "react";
 import { Search, SentimentDissatisfied } from "@mui/icons-material";
 import Carddetails from "../Card/Carddetail";
+import Carousel from "../Carousel/Carousel";
 function Section(data) {
   const [filters, setFilters] = useState([{ key: "all", Label: "All" }]);
   const [carouselToggle, setCarouseltoggle] = useState(true);
@@ -53,7 +54,9 @@ function Section(data) {
                     </Box>
                   )}
                 </Grid>
-              </Grid>): (<div>Hello</div>) 
+              </Grid>): (<Carousel carouseldata={data.data}
+              
+              />) 
 
 }
           </div>
