@@ -4,7 +4,7 @@ import Button from "../Button/Button"
 import Searchh  from "../Search/Searchh"
 import {Link} from "react-router-dom"
 import styles from "./Navbar.module.css"
-function Navbar(data){
+function Navbar(){
 
 
 return(

@@ -1,27 +1,29 @@
 .card {
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.header{
-    display: flex;
-justify-content: space-between;
-align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.tittletext{
-    color: #FFFFFF;
-    
-font-size: 20px;
+.tittletext {
+  color: #ffffff;
 
-
+  font-size: 20px;
 }
-.toggletext{
-    color: #34C94B;
-    font-size: 20px;
-cursor: pointer;
+.toggletext {
+  color: #34c94b;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-
+.tab {
+  width: 340px;
+  height: 34px;
+padding-bottom: 15px;
 }

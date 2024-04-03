@@ -18,13 +18,14 @@ const Controldata = (data) => {
 };
 
 function Carousel(data) {
+
   const swiperitems = () => {
     return (
       <>
         {data.carouseldata.map((ele) => (
           <SwiperSlide key={ele.id}>
             
-            <Carddetails carddata={ele} type={data.carouseldata.type} />
+            <Carddetails carddata={ele} type={data.type} />
           </SwiperSlide>
 
         ))}
