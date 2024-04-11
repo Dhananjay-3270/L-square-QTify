@@ -1,5 +1,7 @@
 .left{
 
 position: relative;
-bottom: 10px;
+z-index: 1;
+bottom: 135px;
+
 }
